@@ -7,3 +7,8 @@
 6. Open the project folder in 'VSCODE IDE' and select terminal.
 7. In the terminal type "python manage.py runserver 5645". 
 8. type "home" in the url box. example: http://127.0.0.1:5645/home
+
+
+9. this is yhe file we have to updated for the merging 
+10. this is for the merge verification purpose
+11. we have to check the the merging and pulling.
