@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}OLSI | {{i.product_Title}}{% endblock  %}
+{% block content %}
+
+    <div class="card mb-3" style="max-width: 90%; margin: 50px;">
+      <div class="row g-0" style="margin: 10px;">
+        <div class="col-md-4">
+          <img src="{{i.product_Image.url}}" style="margin-left: 30px;" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body" style="margin-left: 30px;">
+            <h5 class="card-title" style="margin: 5px 0 10px; color: chocolate; font-size: xx-large; font-weight: 700;">{{i.product_Title}}</h5>
+            <p class="card-text" style="margin: 15px 0 10px; color: gray; font-size: medium; font-weight: 400;">{{i.product_Description}}</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% endblock  %}

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}OLSI | Manufacturing{% endblock  %}
+{% block content %}
+<section id="about-section">
+    {% comment %} <!-- about left  --> {% endcomment %}
+    <div class="about-left">
+        <img src="{% static 'img/manufacture.jpeg' %}">
+    </div>
+
+    {% comment %} <!-- about right  --> {% endcomment %}
+    <div class="about-right">
+        <h2 >Crafting Excellence Through Manufacturing</h2><br>
+        
+        <p>At OLSI, the process of bringing our products to fruition is a carefully orchestrated symphony of artistry and precision. We've established a network of certified craftsmen and experts,
+             who, with their specialized skills, transform raw materials into exceptional creations.</p><br>
+        <p>Our products are born from a collaboration with seasoned artisans who hold the coveted GMC certification. This endorsement signifies their mastery in their respective fields
+             and ensures that each item they produce adheres to the highest standards of quality and craftsmanship.</p>   <br> 
+        <p>The heart of our approach lies in the formulation of unique blends that set our products apart.
+             Guided by our vision, we intricately blend ingredients in ways that not only deliver remarkable results but also cater to individual preferences and needs. This artful blending is a hallmark of OLSI's commitment to tailored excellence.<br><br>
+            Throughout the creation process, we uphold rigorous standards by overseeing every stage personally. 
+            Our dedicated team ensures that each product undergoes meticulous quality checks, reflecting our dedication to delivering nothing short of excellence.
+            </p><br>
+        <p>In essence, OLSI's manufacturing is a harmonious fusion of expertise, innovation, and personal attention. It's a celebration of craftsmanship, 
+            where our products bear the mark of true distinction, enriching the lives of those who experience them.</p> 
+        {% comment %} <div class="address"> {% endcomment %}
+    </div>                
+</section>
+{% endblock %}
+
+
+

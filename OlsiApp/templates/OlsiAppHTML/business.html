@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% block title %}
+  OLSI | Start a Business
+{% endblock %}
+{% load static %}
+{% block content %}
+  <!-- Page Header Start -->
+  <div class="container-fluid page-header breadcrumb-bg py-5 mb-5">
+    <div class="container text-center py-5">
+      <h1 class="display-3 text-primary mb-4 slideInDown">
+        <img src="{% static 'img/Olsi_white_logo.png' %}" alt="" style="height: 70px; margin: 0 5px 10px 0; " />
+        <span class="text-white">Business Opportunity</span>
+      </h1>
+      <nav aria-label="breadcrumb animated slideInDown">
+        <ol class="breadcrumb justify-content-center mb-0">
+          <li class="breadcrumb-item">
+            <a href="{% url 'home' %}" style="text-decoration: none;"><span class="text-white-50" style="font-size: 30px;">Home&nbsp; &#47;</span></a>
+          </li>
+
+          <li class="breadcrumb-item">
+            <a href="{% url 'business' %}"><span class="text-white-50" style="font-size: 30px;">Start a Business</span></a>
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <!-- Page Header End -->
+
+  <!-- Service Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="text-center mx-auto wow fadeInUp" style="max-width: 500px;">
+        <!-- <p class="fs-5 fw-bold text-primary">Our Services</p> -->
+        <h1 class="display-5 mb-5">START A BUSINESS</h1>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 wow fadeInUp">
+          <div class="service-item rounded d-flex h-100">
+            <div class="service-text rounded p-5">
+              <div class="btn-square rounded-circle mx-auto mb-3">
+                <img class="img-fluid" src="{% static 'img/icon/icon-3.png' %}" style="margin: 0 0 25px 80px;" alt="Icon" />
+              </div>
+              <h4 class="mb-3 brdr-line">BUSINESS</h4>
+
+              <p class="mb-4">OLSI Business Opportunity is flexible; it can be taken as a part time or full time business. OLSI Opportunity works in two-fold. Giving you a chance to build your own business at your pace and achieve the rewards and recognition linked to the plan and at the same time, helping other people do the same.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp">
+          <div class="service-item rounded d-flex h-100">
+            <div class="service-text rounded p-5">
+              <div class="btn-square rounded-circle mx-auto mb-3">
+                <img class="img-fluid" src="{% static 'img/icon/icon-6.png' %}" style="margin: 0 0 25px 80px;" alt="Icon" />
+              </div>
+              <h4 class="mb-3 brdr-line">STEP-1</h4>
+              <p class="mb-4">
+                The joining process is designed to keep the entire procedure easy, quick and non-complex. You need to be introduced to the company by an already existing OLSI Direct seller . You can generate a reference number through his ID or you can share few basic details with us. <br /><br />
+                For example, Reference No: 12345
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp">
+          <div class="service-item rounded d-flex h-100">
+            <div class="service-text rounded p-5">
+              <div class="btn-square rounded-circle mx-auto mb-3">
+                <img class="img-fluid" src="{% static 'img/icon/icon-5.png' %}" style="margin: 0 0 25px 80px;" alt="Icon" />
+              </div>
+              <h4 class="mb-3 brdr-line">STEP-2</h4>
+              <p class="mb-4">
+                Once you generate your reference number, you can generate your ID number (Direct Seller number) from your nearest franchisee after our entire franchisee verification process. <br /><br />
+                For example, ID No: OLSI123AA
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp">
+          <div class="service-item rounded d-flex h-100">
+            <div class="service-text rounded p-5">
+              <div class="btn-square rounded-circle mx-auto mb-3">
+                <img class="img-fluid" src="{% static 'img/icon/icon-4.png' %}" style="margin: 0 0 25px 80px;" alt="Icon" />
+              </div>
+              <h4 class="mb-3 brdr-line">STEP-3</h4>
+              <p class="mb-4">After receiving your ID number, you become eligible to buy products from any of our existing franchisee at (DP) Distributor price and sell further on MRP.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp">
+          <div class="service-item rounded d-flex h-100">
+            <div class="service-text rounded p-5">
+              <div class="btn-square rounded-circle mx-auto mb-3">
+                <img class="img-fluid" src="{% static 'img/icon/icon-8.png' %}" style="margin: 0 0 25px 80px;" alt="Icon" />
+              </div>
+              <h4 class="mb-3 brdr-line">STEP-4</h4>
+              <p class="mb-4">In case you wish to grow further and avail special offers, bonuses and offers on our products along with rewards and recognition, you would require to purchase products of 300 BV initially.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp">
+          <div class="service-item rounded d-flex h-100">
+            <div class="service-text rounded p-5">
+              <div class="btn-square rounded-circle mx-auto mb-3">
+                <img class="img-fluid" src="{% static 'img/icon/icon-2.png' %}" style="margin: 0 0 25px 80px;" alt="Icon" />
+              </div>
+              <h4 class="mb-3 brdr-line">STEP-5</h4>
+              <p class="mb-4">OLSI business plan allows you to join this as a part time or full time ensuring that you can spend quality time with your friends and family. It also gives you that opportunity to earn a good income.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Service End -->
+{% endblock %}

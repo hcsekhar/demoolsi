@@ -1,0 +1,9 @@
+1. First go to the python.org website. 
+2. Download python latest version.
+3. When you double click on the python setup file, on first window you must click on the "Add Path".
+4. After that open command prompt and type "pip install Django".
+5. If it is getting any error check python is installed or not by using commandprompt and type "python --version".
+    if it is showing python version, In your system successfully installed. then try point 4.
+6. Open the project folder in 'VSCODE IDE' and select terminal.
+7. In the terminal type "python manage.py runserver 5645". 
+8. type "home" in the url box. example: http://127.0.0.1:5645/home

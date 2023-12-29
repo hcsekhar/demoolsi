@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block title %}OLSI | Products{% endblock  %}
+{% load static %}
+{% block content %}
+
+  <!-- Page Header Start -->
+<div class="container-fluid page-header breadcrumb-bg py-5 mb-5">
+  <div class="container text-center py-5">
+    <h1 class="display-3 text-primary mb-4 slideInDown">
+      <img src="{% static 'img/Olsi_white_logo.png' %}" alt="" style="height: 70px; margin: 0 5px 10px 0; " /><span class="text-white">Products</span>
+      
+    </h1>
+    <nav aria-label="breadcrumb animated slideInDown">
+      <ol class="breadcrumb justify-content-center mb-0">
+        <li class="breadcrumb-item">
+          <a href="{% url 'home' %}" style="text-decoration: none;"><span class="text-white-50" style="font-size: 30px;">Home&nbsp; &#47;</span></a>
+        </li>
+
+        <li class="breadcrumb-item">
+          <a href="{% url 'business' %}"><span class="text-white-50" style="font-size: 30px;">Products</span></a>
+        </li>
+      </ol>
+    </nav>
+  </div>
+</div>
+<!-- Page Header End -->
+
+
+  <div class="prdt-container">
+    {% for i in data %}
+      <div class="prdt-card">
+        <a href="{% url 'viewproduct' i.id %}">
+          <div class="prdt-img">
+            <img src="{{ i.product_Image.url }}" alt="..." />
+          </div>
+          <div class="prdt-title">
+            <h5>{{ i.product_Title }}</h5>
+          </div>
+        </a>
+      </div>
+      {% comment %} <div class="prdt-button">
+        <a href="#" class="btn btn-primary">Buy</a>
+      </div> {% endcomment %}
+    {% endfor %}
+  </div>
+{% endblock %}

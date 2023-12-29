@@ -1,0 +1,248 @@
+{% load static %}
+<!-- Top Navbar started -->
+<div class="top-nav">
+  <div class="firstnav">
+    <div class="left-cntnt">
+      <a href="{% url 'faq' %}"><p>FAQ's</p></a>
+      <a href="{% url 'business' %}"><p>Start a Business</p></a>
+      <a href="{% url 'aboutus' %}"><p>About OLSI</p></a>
+    </div>
+    <div class="right-cntnt">
+      
+      <div class="">
+        <p class="" id="google_translate_element"></p>
+
+      </div>
+    <div>
+        <p>
+          <a href="{% url 'contact' %}">Contact Us </a>
+        </p>
+        
+      </div>
+      
+        <button type="button" class="btn btn-primary btnLogin-popup">Sign In</button>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="secondnav">
+    <div class="nav-container">
+      <div class="main-tabs">
+        <header class="header">
+          <div class="container">
+            <div class="row">
+              <div class="item-left">
+                <a href="{% url 'home' %}">
+                <img src="{% static 'img/logo_olsi.png' %}" class="logo1" alt="" /></a>
+              </div>
+              <!-- menu start here -->
+              <div class="item-center">
+                <nav class="menu">
+                  <div class="mobile-menu-head">
+                    <div class="go-back">
+                      <i class="fa fa-angle-left"></i>
+                    </div>
+                    <div class="current-menu-title"></div>
+                    <div class="mobile-menu-close">&times;</div>
+                  </div>
+                  <ul class="menu-main">
+                    <li class="menu-item-has-children">
+                      <a href="{% url 'products' %}">PRODUCTS <i class="fa fa-angle-down"></i></a>
+                      <div class="sub-menu mega-menu mega-menu-column-4">
+                        <div class="list-item" style="border-right: 1px solid #d9d9d9;">
+                          <h4 class="title">WELLNESS – HEALTH CARE PRODUCTS</h4>
+                          <ul style="text-decoration: none;">
+                            <li>
+                              <a href="{{'viewproduct/1'}}" >Ojas Active</a>
+                            </li>
+                            <li>
+                              <a href="{{'viewproduct/2'}}">Glycolsi</a>
+                            </li>
+                            <li>
+                              <a href="{{'viewproduct/3'}}">Kido’s Protein Mix</a>
+                            </li>
+                            <li>
+                              <a href="{{'viewproduct/4'}}">Flax Oil Capsules</a>
+                            </li>
+
+                          </ul>
+                        </div>
+                        <div style="text-decoration: none; border-right: 1px solid #d9d9d9;" class="list-item">
+                          <h4 class="title">AGRIEN – AGRICULTURE PRODUCTS</h4>
+                          <ul style="text-decoration: none;">
+                            <li>
+                              <a href="{{'viewproduct/5'}}">Humi Rich (Granules)</a>
+                            </li>
+                            <li>
+                              <a href="{{'viewproduct/6'}}">Humic Power (Bio Stimulant)</a>
+                            </li>
+                            <li>
+                              <a href="{{'viewproduct/7'}}">Silicon Surfactant</a>
+                            </li>
+                            <li>
+                              <a href="{{'viewproduct/9'}}">Plant Growth Promoter</a>
+                            </li>
+                            <li>
+                              <a href="{{'viewproduct/8'}}">Hi Yield (Boost Enhancer)</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div style="text-decoration: none; border-right: 1px solid #d9d9d9;" class="list-item">
+                          <h4 class="title">PREFERENCE - HERBAL & NATURAL PRODUCTS</h4>
+                          <ul style="text-decoration: none;">
+                            <li>
+                              <a href="{{'viewproduct/10'}}">Preference - Herbal Soap</a>
+                            </li>
+                            
+                          </ul>
+                        </div>
+                        <div style="text-decoration: none; border-right: 1px solid #d9d9d9;" class="list-item">
+                          <h4 class="title">WHITE HOUSE – HOME CARE (DISHWASH,DETERGENT)</h4>
+                          <ul style="text-decoration: none;">
+                            <li>
+                              <a href="{{'viewproduct/11'}}">GEL-XIV(Concentrated Loundry Detergent)</a>
+                            </li>
+                            <li>
+                              <a href="{{'viewproduct/12'}}">Clean Drops(Concentrated Advance Dishwashing Gel)</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a style="text-decoration: none;" href="#">BRANDS <i class="fa fa-angle-down"></i></a>
+                      <div class="sub-menu single-column-menu">
+                        <ul style="text-decoration: none;">
+                          <li>
+                            <a href="#">
+                              <img src="{% static 'img/AgrienLog.png' %}" style="height: 90px; width: 175px;" alt="">
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img src="{% static 'img/logo_olsi.png' %}" style="height: 90px; width: 175px;" alt="">
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img src="{% static 'img/Wellness-Logo.png' %}" style="height: 90px; width: 95px; margin-left: 30px;" alt="">
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img src="{% static 'img/WhiteHouseLogo.png' %}" style="height: 90px; width: 175px;" alt="">
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="menu-item-has-children">
+                      <a style="text-decoration: none;" href="{% url "underconstrunction" %}">GOALS <i class="fas fa-angle-down"></i></a>
+                      <div class="sub-menu single-column-menu">
+                        <ul style="text-decoration: none;">
+                          <li>
+                            <a href="{% url "underconstrunction" %}">OLSI</a>
+                          </li>
+                          <li>
+                            <a href="{% url "underconstrunction" %}">OLSI</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <a style="text-decoration: none;" href="{% url "underconstrunction" %}">PROMOTIONS</a>
+                    </li>
+                    <li>
+                      <a style="text-decoration: none;" href="{% url "galery" %}">GALLERY</a>
+                    </li>
+                    {% comment %} <li>
+                      <a style="text-decoration: none;" href="#">TEAMS</a>
+                    </li> {% endcomment %}
+                  </ul>
+                </nav>
+              </div>
+              <!-- menu end here -->
+
+              <!-- menu start here -->
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top Navbar Ended -->
+</div>
+
+
+{% comment %} ---------------------------------------------------------------- {% endcomment %}
+
+  <!-- Login and Registration  -->
+  
+<div class="cover_box">
+  <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+  <div class="form-box login">
+      <h2>Login</h2>
+      <form action="#">
+          <div class="input-box">
+              <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+              <input type="email" required>
+              <label>Email</label>
+
+          </div>
+          <div class="input-box">
+              <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+              <input type="password" required>
+              <label>Password</label>
+
+          </div>
+          <div class="remember-forgot">
+              <label><input type="checkbox">Remmber me</label>
+              <a href="#">Forgot password?</a>
+
+          </div>
+          <button type="submit" class="btn12">Login</button>
+          <div class="login-register">
+              <p>Don't have an account? <a href="#reg" class="register-link">Register</a></p>
+          </div>
+
+
+      </form>
+
+
+  </div>
+  <!-- registration -->
+  <div id="reg" class="form-box register">
+      <h2>Register</h2>
+      <form action="#">
+          <div class="input-box">
+              <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+              <input type="text" required>
+              <label>Username</label>
+
+          </div>
+          <div class="input-box">
+              <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+              <input type="email" required>
+              <label>Email</label>
+
+          </div>
+          <div class="input-box">
+              <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+              <input type="password" required>
+              <label>Password</label>
+
+          </div>
+          <div class="remember-forgot">
+              <label><input type="checkbox">Agree to terms & conditions</label>
+              <a href="#">Forgot password?</a>
+
+          </div>
+          <button type="submit" class="btn12">Register</button>
+          <div class="login-register">
+              <p>Already have an account? <a href="#" class="login-link">Sign In</a></p>
+          </div>
+      </form>
+  </div>
+</div>

@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+{% comment %} ---------- Carousel starts ---------------------- {% endcomment %}
+
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'img/Olsi_all.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'img/Ojas.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'img/Olsi_Agreein.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'img/Olsi_Agreein1.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+{% comment %} Carousel Ends {% endcomment %}
+
+{% comment %} Displaying main card {% endcomment %}
+<div class="container my-5 bg-success rounded p-2 text-dark bg-opacity-50">
+    <div class="bg-body-tertiary ceo-cntnt py-6 rounded bg-opacity-50">
+      <div class="col-sm-8 py-6 mx-auto">
+        <div class="ceo-cntnt-body">
+        <h1 class="display-5 text-white fw-normal">CEO WORDS</h1><br>
+        <p class="text-justify text-white">A result-driven general management professional with a remarkable track record spanning over 20+ years in steering SBU Profit Centers across multiple FMCG companies within the direct selling industry. With a history of triple-digit Year on Year (YOY) sales revenue growth, our CEO boasts the industry's best record in driving top-line and bottom-line figures. A commitment to excellence within the corporate framework sets them apart as a true leader.  An in-depth understanding of end-to-end business operations. From spearheading monumental sales revenue growth to nurturing exceptional people management and unveiling unparalleled end-to-end operations insights, our CEO's journey is a testament to their transformative impact.</p>
+        <p>
+          <a class="btn btn-primary" href="{% url 'aboutus' %}" role="button">Explore More &raquo;</a>
+        </p>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+  <main>
+
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">Products For You</h1>
+          {% comment %} <p class="lead text-body-secondary">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+          <p>
+            <a href="#" class="btn btn-primary my-2">Main call to action</a>
+            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+          </p> {% endcomment %}
+        </div>
+      </div>
+    </section>
+  
+    {% comment %} <div class="bg-body-tertiary" > {% endcomment %}
+      
+  
+        {% comment %} <div class="row"> {% endcomment %}
+          {% comment %} <div class="col"> {% endcomment %}
+            <div class="prdt-container">
+              {% for i in data %}
+                <div class="prdt-card">
+                  <a href="{% url 'viewproduct' i.id %}">
+                    <div class="prdt-img">
+                      <img src="{{ i.product_Image.url }}" alt="..." />
+                    </div>
+                    <div class="prdt-title">
+                      <h5>{{ i.product_Title }}</h5>
+                    </div>
+                  </a>
+                </div>
+                {% comment %} <div class="prdt-button">
+                  <a href="#" class="btn btn-primary">Buy</a>
+                </div> {% endcomment %}
+              {% endfor %}
+            </div>
+          {% comment %} </div> {% endcomment %}
+          
+        {% comment %} </div> {% endcomment %}
+      
+    {% comment %} </div> {% endcomment %}
+  
+  </main>
+
+      <!-- Testimonial Start -->
+      
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                    {% comment %} <p class="fs-5 fw-bold text-primary">Testimonial</p> {% endcomment %}
+                    <h1 class="display-5 mb-5">What Our Clients Say About Us!</h1>
+                    <p class="mb-4">TRANSFORMING THE LIVES
+                        OF PEOPLE THROUGH WELLNESS</p>
+                    <!-- <a class="btn btn-primary py-3 px-4" href="">See More</a> -->
+                </div>
+                <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item">
+                            {% comment %} <img class="img-fluid rounded mb-3" src="img/testimonial-1.jpg" alt=""> {% endcomment %}
+                            <p class="fs-9 fw-light">I always had big dreams for my life and OLSI gave me a platform to realise my dreams. I am proud that even at the age of 67, I am financially independent. I am associated with OLSI from the very beginning and have achieved a tremendous amount of success.</p>
+                            <h4>Client Name</h4>
+                            <span>Doctor</span>
+                        </div><br>
+                        <div class="testimonial-item">
+                            {% comment %} <img class="img-fluid rounded mb-3" src="img/testimonial-2.jpg" alt=""> {% endcomment %}
+                            <p class="fs-9 fw-light">I had been working with other network marketing companies for the past 10 years. But despite my constant hard work I didn’t receive any result for my efforts. I joined OLSI in 2021 and with just 5% of efforts I had put in my previous company, I was able to achieve great success.</p>
+                            <h4>Client Name</h4>
+                            <span>Engineer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <!-- Testimonial End -->
+{% endblock  %}
